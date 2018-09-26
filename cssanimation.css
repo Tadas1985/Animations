@@ -1,225 +1,87 @@
 body{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 14px;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-#box1{
-    position: relative;
-	display: inline-block;
-	vertical-align: top;
-	height: 100px;
-	width: 100px;
-	margin-right: -4px; 
-	cursor: pointer;
-	background-color: rgb(197, 123, 11);
-	transition: 1s;
-}
-#box1:hover{
-	transform:scale(1.5);
-}
-#box2{
-    background-color: #2387df;
-    position: relative;
-	display: inline-block;
-	vertical-align: top;
-	height: 100px;
-	width: 100px;
-	margin-right: -4px; 
-	cursor: pointer;
-	transition: 2s; 
-}
-#box2:hover{
-	transform: rotate(180deg);
-}
-#box3{
-    background-color: rgb(83, 15, 72);
-    position: relative;
-	display: inline-block;
-	vertical-align: top;
-	height: 100px;
-	width: 100px;
-	margin-right: -4px; 
-	cursor: pointer;
-	transition: 2s;
-}
-#box3:hover{
-	transform: rotate3d(90deg);
-}
-#box4{
-    background-color: rgb(70, 77, 83);
-    position: relative;
-	display: inline-block;
-	vertical-align: top;
-	height: 100px;
-	width: 100px;
-	margin-right: -4px; 
-	cursor: pointer;
-	transition: 1s;
-}
-#box4:hover{
-	transform: translate(500px);
-}
-#box5{
-    background-color: rgb(185, 24, 24);
-    position: relative;
-	display: inline-block;
-	vertical-align: top;
-	height: 100px;
-	width: 100px;
-	margin-right: -4px; 
-	cursor: pointer;
-	animation: box5 5s linear 0s 1 alternate ;
-}
-@keyframes box5 {
-    0%   { left: 0px; top: 0px;}
-    25%  { left: 200px; top: 0px;}
-    50%  { left: 200px; top: 200px;}
-    75%  { left: 0px; top: 200px;}
-    100% { left: 0px; top: 0px;}
-}
-#box6{
-    background-color: black;
-    position: relative;
-	display: inline-block;
-	vertical-align: top;
-	height: 100px;
-	width: 100px;
-	margin-right: -4px; 
-	cursor: pointer;
-	-webkit-animation-name: box6;	
-	-webkit-animation-duration: 6s;
-}
-@keyframes box6 {
-	from {
-	  opacity: 0;
-	  transform: scale(0.1) rotate(30deg);
-	  transform-origin: center bottom;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 14px;
+		overflow: hidden;
+		white-space: nowrap;
 	}
-  
-	50% {
-	  transform: rotate(-10deg);
+	.box {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		height: 100px;
+		width: 100px;
+		margin-right: -4px; 
+		cursor: pointer;
 	}
-  
-	70% {
-	  transform: rotate(3deg);
-	}
-  
-	to {
-	  opacity: 1;
-	  transform: scale(1);
-	}
-  }
-
-  
-#box7{
-    background-color: blueviolet;
-    position: relative;
-	display: inline-block;
-	vertical-align: top;
-	height: 100px;
-	width: 100px;
-	margin-right: -4px; 
-	cursor: pointer;
-	-webkit-animation-name: box7;	
-	-webkit-animation-duration: 3s;
-  }
-  @keyframes box7 {
-	from {
-	  transform-origin: left bottom;
-	  opacity: 1;
-	}
-  
-	to {
-	  transform-origin: left bottom;
-	  transform: rotate3d(0, 0, 1, 45deg);
-	  opacity: 0;
-	}
-  }
- 
-
-#box8{
-    background-color: bisque;
-    position: relative;
-	display: inline-block;
-	vertical-align: top;
-	height: 100px;
-	width: 100px;
-	margin-right: -4px; 
-	cursor: pointer;
-	-webkit-animation-name: box8;	
-	-webkit-animation-duration: 3s;
-}
-@keyframes box8 {
-	from {
-	  opacity: 0;
-	  transform: translate3d(-2000px, 0, 0);
-	}
-  
-	to {
-	  opacity: 1;
-	  transform: translate3d(0, 0, 0);
-	}
-  }
-  
-#box9{
-    background-color: green;
-    position: relative;
-	display: inline-block;
-	vertical-align: top;
-	height: 100px;
-	width: 100px;
-	margin-right: -4px; 
-	cursor: pointer;
-	-webkit-animation-name: box9;	
-	-webkit-animation-duration: 3s;
-}
-@keyframes box9 {
-	from {
-	  transform: translate3d(100%, 0, 0) skewX(-30deg);
-	  opacity: 0;
-	}
-  
-	60% {
-	  transform: skewX(20deg);
-	  opacity: 1;
-	}
-  
-	80% {
-	  transform: skewX(-5deg);
-	}
-  
-	to {
-	  transform: translate3d(0, 0, 0);
-	}
-  }
-#box10{
-    background-color: orange;
-    position: relative;
-	display: inline-block;
-	vertical-align: top;
-	height: 100px;
-	width: 100px;
-	margin-right: -4px; 
-	cursor: pointer;
-	-webkit-animation-name: box10;	
-	-webkit-animation-duration: 3s;
-	
-}
-@keyframes box10 {
-	from {
-	  transform: translate3d(0, -100%, 0);
-	  visibility: visible;
-	}
-  
-	to {
-	  transform: translate3d(0, 0, 0);
-	}
-  }
 
 
-	/* ANIMATIONS */
+.one{
+	background-color: #FA9D00;
+}
+.two {
+	background-color: #006884;
+}
+.three {
+	background-color: #89dbec;
+}
+.four {
+	background-color: #ffd08d;
+}
+.five {
+	background-color: #6e006c;
+}
+.six {
+	background-color: #f68370;
+}
+.seven {
+	background-color: #B00051;
+}
+.eight {
+	background-color: #00909e;
+}
+.nine {
+	background-color: #ed0026;
+}
+.ten {
+	background-color: #91278f;
+}
+
+.crawl {
+	-webkit-animation: crawl 4s;
+}
+.dangle {
+	-webkit-animation: dangle 4s;
+}
+.jump {
+	-webkit-animation: jump 4s;
+}
+.stretch {
+	-webkit-animation: stretch 4s;
+}
+.flip {
+	-webkit-animation: flip 4s;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+    z-index: 0;
+}
+
+#links_list {
+	padding: 10px 20px;
+}
+
+a {
+	text-decoration: none;
+	margin: 0 10px;
+	color: #006884;
+}
+
+/* ANIMATIONS */
 
 @-webkit-keyframes crawl {
 	12%, 15%, 18%, 20% {-webkit-transform: translateY(400px);}
